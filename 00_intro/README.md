@@ -4,7 +4,7 @@
 ## Tujuan
 1. Memahami pengetahuan dasar tentang rangkaian listrik dan komponennya
 2. Mengenali beberapa komponen yang akan digunakan dalam projek kali ini
-
+---
 ## Konsep Dasar Elektronika
 ### 1. Elektron dan Muatan
 Elektron adalah komponen penyusun dasar dari seluruh komponen dan benda-benda yang ada di dunia ini. Tanpa adanya elektron, mekanisme yang ada di dunia ini akan berbeda 180°. Tanpa adanya elektron, tidak akan ada ikatan-ikatan yang terbentuk antar unsur/atom. Tanpa adanya elektron, konsep atau peristiwa kelistrikan tidak akan terjadi, dan peristiwa kelistrikan, sangat berguna bagi keberlangsungan kehidupan di dunia, mulai dari peristiwa petir, alat-alat elektronik yang kita gunakan, otot yang kita gerakan tiap hari, dan mata yang kita gunakan untuk melihat dunia yang indah ini.
@@ -114,8 +114,8 @@ Dan Energy adalah sebuah properti yang bisa menyebabkan sebuah benda itu berubah
     P adalah daya (W)
     dan t adalah waktu (s)
 
-## Apa itu Computer
-
+### 8. Apa itu Computer
+---
 ## Komponen dasar Elektronika
 
 Dalam sebuah rangkaian listrik, terdapat unsur-unsur yang menyusun dan memiliki karakteristik masing-masing, unsur-unsur inilah yang disebut komponen listrik.
@@ -132,7 +132,7 @@ Dalam sebuah rangkaian listrik, terdapat unsur-unsur yang menyusun dan memiliki 
 
 >  bla2
  
-
+---
 ## Notes
 
 ---
