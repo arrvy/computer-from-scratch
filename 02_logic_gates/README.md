@@ -7,6 +7,7 @@
 3. Mengetahui susunan rangkaian elektris tiap gerbang logika dan drawbacknya
 ---
 ## Brief Theory
+[to the circuit diagram](#circuit)
 
 ### Pengantar tentang logika boolean
 Logika boolean adalah seperangkat aturan logika yang **bekerja berdasar pada aturan aljabar boolean**. Logika ini bekerja dengan membagi kondisi-kondisi kebenaran **berdasarkan 2 state**, True/False, 1/0, High/Low, dan lain lain.
@@ -74,7 +75,7 @@ Hal ini disasarkan atas pertimbangan-pertimbangan berikut:
   
 Contohnya adalah, gerbang NAND sendiri dapat digunakan untuk menyusun gerbang-gerbang logika lain seperti XOR,XNOR,dan bahkan gerbang dasar dengan lebih hemat sumber daya karena gerbang logika **NAND itu sendiri bisa didapatkan tanpa menyusun dari AND dan OR secara bersama2**.
 
-Namun kita akan tetap melanjutkan pemahaman kita tentang konsep gerbang logika dasar yang bisa menyusun gerbang-gerbang lain
+Namun kita akan tetap melanjutkan pemahaman kita tentang konsep gerbang logika dasar yang bisa menyusun gerbang-gerbang lain. Dan dengan tetap menggunakan gerbang logika dasar, kita bisa **lebih mudah menyusunnya dalam bentuk matematis aljabar boolean**.
 
 
 #### 4. NAND
@@ -132,6 +133,8 @@ Dengan ekspresi boolean XOR adalah:
  atau
  x=AB + <span style="text-decoration:overline">A</span> <span style="text-decoration:overline">B</span>
 
+##### Kenapa menggunakan Exclusive gate
+*Exclusive gate*, walaupun sulit untuk dilogik,sangatlah berguna dalam penyusunan sistem-sistem digital yang kompleks. X gates, berguna dalam penyusunan komponen digital seperti Adder, ALU, dll.
 
 
 ### Brief Summary
@@ -162,7 +165,7 @@ Untuk percobaan membuat logic gates, pastinya kita akan membuat dalam bentuk dis
 - Tweezer
 
 ---
-## Circuit Diagram
+## Circuit Diagram <a name="circuit"></a>
 
 Disini, aku bakalan pakai aplikasi simulasi Falstad. Meskipun kurang nyata, simulasi ini sangatlah cukup bagi kebutuhanku dalam menjelaskan secara sederhana rangkaian dan hasil dari logic gates dasar.
 
@@ -203,3 +206,10 @@ XNOR |
 ## Notes
 
 
+---
+### Source
+[BreadBoardCircuits.com : BJT Logic Gates](https://breadboardcircuits.com/bjt-logic-gates/)
+
+[Creating Logic Gates using Transistors](https://www.101computing.net/creating-logic-gates-using-transistors/)
+
+Digital systems: principles and applications, Ronald J. Tocci
