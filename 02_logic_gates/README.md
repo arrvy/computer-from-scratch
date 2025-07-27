@@ -1,12 +1,13 @@
 # Module 02 : Logic Gates / Gerbang Logika
 >English Summary in the last section of page
-
+>Note: This is my learning summary, so i'm not sure my summary is 100% correct. Do your own research :3
 ## Tujuan
 1. Mengetahui jenis-jenis gerbang logika dan keunikannya
 2. Mengetahui tabel kebenaran pada tiap-tiap gerbang logika
 3. Mengetahui susunan rangkaian elektris tiap gerbang logika dan drawbacknya
 ---
 ## Brief Theory
+
 ### Pengantar tentang logika boolean
 Logika boolean adalah seperangkat aturan logika yang **bekerja berdasar pada aturan aljabar boolean**. Logika ini bekerja dengan membagi kondisi-kondisi kebenaran **berdasarkan 2 state**, True/False, 1/0, High/Low, dan lain lain.
 
@@ -36,14 +37,14 @@ Gerbang logika AND adalah gerbang logika yang nilai outputnya 1 **HANYA** ketika
 artinya kita membutuhkan nilai seluruh input itu bernilai benar agar nilai outputnya itu benar. Ini bisa kita bayangkan seperti ketika kita memakai konjungsi dan.
 Ekspresi boolean dari gerbang ini adalah:
 >x = A×B×....
-#### 1. OR
+#### 2. OR
 Gerbang logika OR adlaah gerbang logika yang nilai outputnya 0 **HANYA** ketika keseluruhan input bernilai 0.
 ![](https://www.techtarget.com/rms/onlineimages/diagram2-f.png)
 Ekspresi boolean dari gerbang OR adalah:
 > x = A+B+....
-#### 1. NOT
+#### 3. NOT
 Not, atau biasa disebut dengan inverter (dalam elektro), adalah gerbang logika yang nilai outputnya **BERKEBALIKAN** dengan nilai inputnya. Operasi NOT juga bisa disebut dengan operasi negasi
-
+![NOT Gate](https://www.techtarget.com/rms/onlineimages/diagram4-f.png)
 Ekspresi boolean dari gerbang NOT adalah:
 > x = Ā
 > atau
@@ -56,7 +57,7 @@ Ekspresi boolean dari gerbang NOT adalah:
 
 ##### Input dari gerbang logika
 Gerbang-gerbang logika sebelumnya bekerja pada berbagai input yang diberikan. NOT, hanya bekerja pada 1 input. **OR dan AND, bisa bekerja pada 2 input atau lebih**. Secara rangkaian listrik, kita bisa mendapatkan gerbang AND/OR lebih dari 2 input dengan memasangkan output gerbang itu ke input gerbang yang lain.(combining logic gates).
-![](https://graphicmaths.com/img/computer-science/logic/combining-logic-gates/3-and-gate.png)
+<img src="https://graphicmaths.com/img/computer-science/logic/combining-logic-gates/3-and-gate.png" style="width: 50vw; margin: auto; display : block;"></img>
 
 #### Gerbang Logika Dasar
 Gerbang logika dasar adalah gerbang yang memiliki kemampuan berdasarkan tabel kebenarannya untuk menghasilkan semua gerbang-gerbang logika yang lain. Gerbang logika tersebut adalah
@@ -66,19 +67,88 @@ AND, OR, dan NOT. Dengan gerbang itu, kita bisa membuat konsep gerbang lain, mis
 Sedangkan, gerbang logika universal, adalah gerbang logika yang **secara rangkaian listrik bisa digunakan untuk menyusun fungsi-fungsi gerbang lain** bahkan gerbang dasar sekalipun. Gerbang tersebut adalah NAND and NOR.
 Hal ini disasarkan atas pertimbangan-pertimbangan berikut:
 - lebih mudah direalisasikan dalam rangkaian/hardware
-- Lebih hemat SDA dibandingkan menyusun dari konsep gerbang dasar langsung
+- Lebih hemat SDA dibandingkan menyusun dari konsep gerbang dasar langsung (CMOS technology)
 - Lebih terstandarisasi dalam dunia industri
+- Proses lebih cepat karena membutuhkan sedikit komponen
+- Lebih hemat energi juga dariapda menyusun dari OR,AND,NOT
   
 Contohnya adalah, gerbang NAND sendiri dapat digunakan untuk menyusun gerbang-gerbang logika lain seperti XOR,XNOR,dan bahkan gerbang dasar dengan lebih hemat sumber daya karena gerbang logika **NAND itu sendiri bisa didapatkan tanpa menyusun dari AND dan OR secara bersama2**.
 
-#### 1. NAND
-#### 1. NAND
+Namun kita akan tetap melanjutkan pemahaman kita tentang konsep gerbang logika dasar yang bisa menyusun gerbang-gerbang lain
 
-### Tabel kebenaran dari masing-masing gerbang
 
-### Gambaran umum penggunaan di dunia nyata (contoh: komputer, saklar otomatis, sensor logika)
+#### 4. NAND
+Secara konsep adalah gabungan dari AND yang outptunya menuju NOT 
+![NAND GATE](https://www.techtarget.com/rms/onlineimages/diagram5-f.png)
+<img src="https://spinningnumbers.org/i/logic13.svg" style="width: 50vw; margin: auto; display : block;"></img>
 
-### Sedikit penjelasan pendekatan: IC Logic (misal 74xx series) Discrete logic pakai transistor (kalau kamu buat dari NPN juga)
+Dengan ekspresi booleannya adalah:
+> x = <span style="text-decoration:overline">A×B</span>
+
+
+#### 5. NOR
+Secara konsep adalah output dari OR yang disambungkan ke NOT 
+![NOR GATE](https://www.techtarget.com/rms/onlineimages/diagram6-f.png)
+<img src="https://spinningnumbers.org/i/logic14.svg" style="width: 50vw; margin: auto; display : block;"></img>
+
+> x = <span style="text-decoration:overline">A+B</span>
+
+#### Bubbled Gate
+Lalu bagaimana jika kita menyambungkan NOT dulu baru kita akan hubungkan ke gerbang lain (AND/OR). hal ini akan menghasilkan apa yang dinamakan Bubbled Gate.
+> <p style="color:red">Note</p>
+> sebenarnya aku masih bingung, apakah NAND juga termauk bubbled gate ataupun tidak, tapi untuk sekarang, saya mendefinisikan bubbled gate hanya berkaitan dengan <b>input saja</b>
+>
+<img src="https://i.ytimg.com/vi/SszzbJUtpXI/sddefault.jpg" style="width: 50vw; margin: auto; display : block; back"></img>
+
+
+Konsep bubbled gate sangat berguna saat kita ingin menyusun ekuivalensi-ekuivalensi hasil gerbang logika dengan susunan-susunan tertentu. Susunan-susunan tertentu ini bisa disebut dengan ***Alternative Gate***
+
+
+#### Alternative Gate
+*Alternatif gate* adalah gerbang yang memiliki tabel kebenaran yang sama dengan gerbang asli namun memiliki susunan logika yang berbeda. Kenapa gerbang ini ada karena alasan2 tertentu yang sebagain besar berkaitan dengan manufaktur.
+Alasan:
+1. Menyederhanakan desain sistem
+2. Menyelaraskan input/sistem yang digunakan, apakah active-low/active-high
+3. mempermudah implementasi fisik di dunia nyata
+   
+   <img src="https://www.gatevidyalay.com/wp-content/uploads/2018/06/Alternative-Logic-Gates-Bubbled-Gates.png" style="width: 50vw; margin: auto; display : block;"></img>
+
+
+#### 6. XOR
+Atau bisa disebut dengan *exclusive or* adalah sama dengan logika atau yang berada dalam dunia nyata. 
+ketika ada teman kita yang menawarkan minuman *"teh atau kopi"*, kita pasti disuruh memilih salah satunya dan kita akan memilih diantara keduanya (either). Tapi ketika kita malah menjawab *"keduanya aja"*, mungkin kita sudah ga dianggap teman lagi :v
+![XOR GATE](https://www.techtarget.com/rms/onlineimages/diagram3-f.png)
+Dengan ekspresi boolean XOR adalah:
+>x=A⊕B
+ atau
+>x =  <span style="text-decoration:overline">A</span>B+ <span style="text-decoration:overline">B</span>A
+
+
+#### 6. XNOR
+Gerbang XNOR, OR yang dihubungkan ke NOT, yang keluaran akan bernilai benar ketika inputnya bernilai sama.
+![XNOR GATE](https://www.techtarget.com/rms/onlineimages/diagram7-f.png)
+Dengan ekspresi boolean XOR adalah:
+>x=<span style="text-decoration:overline">A⊕B</span>
+ atau
+ x=AB + <span style="text-decoration:overline">A</span> <span style="text-decoration:overline">B</span>
+
+
+
+### Brief Summary
+![](https://www.gatevidyalay.com/wp-content/uploads/2018/06/Logic-Gates-Types.png)
+
+Selain itu juga, kita perlu belajar mengenai dasar-dasar dari aljabar boolean agar bisa menganalisis rangkaian gerbang logika sehingga kita bisa menyederhanakan rangkaian lebih lanjut dan mendapatkan efektivitas dan efisiensi yang tinggi. *Dan kita bisa juga mendapatkan pekerjaan :3*
+
+### Application in the real life
+Banyak lah, ngapain ditanyain
+
+### IC and Discrete
+Gerbang logika, dapat kita temui dalam bentuk discrete maupun IC (Integrated Circuit). Gerbang logika dalam bentuk discrete dapat kita temukan ataupun buat melalui komponen-komponen transistor (BJT maupun FET).
+ Namun, kita sering melihat dalam bentuk BJT karena FET itu sendiri lebih sering ditemukan dalam bentuk IC karena lebih kompleks susunannya untuk membentuk logic gates dan mudah rusak
+
+Gerbang logika dalam bentuk IC, dapat kita temukan dalam bentuk chip, sehingga IC logic gates biasanya lebih compact, murah, dan lebih lazim digunakan di zaman modern.
+
+Untuk percobaan membuat logic gates, pastinya kita akan membuat dalam bentuk discrete dan menggunakan BJT sebagai transisornya.
 
 ---
 ## Tools and Materials
@@ -111,6 +181,8 @@ XNOR |
 ## Resulting Test
 ---
 ## Notes
+
+<br>
 
 ---
 ---
