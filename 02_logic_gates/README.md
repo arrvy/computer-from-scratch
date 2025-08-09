@@ -171,16 +171,31 @@ Disini, aku bakalan pakai aplikasi simulasi Falstad. Meskipun kurang nyata, simu
 
 NAMA | RANGKAIAN
 -----|---
-NOT |![alt text](image.png)
-AND |![alt text](image-1.png)
-NAND |![alt text](image-2.png)
-OR |![alt text](image-3.png)
-NOR |![alt text](image-4.png)
+NOT |![INVERTER](./assets/image.png)
+AND |![AND](./assets/image-1.png)
+AND-new |![AND-new](./assets/AND-new.png)
+NAND |![NAND](./assets/image-2.png)
+OR |![OR](./assets/image-3.png)
+OR New |![OR-new](./assets/OR-new.png)
+NOR |![NOR](./assets/image-4.png)
 XOR |
 XNOR |
+> Aku membuat beberapa desain dalam satu logic gates, dengan perbedaan lokasi output yang digunakan (ada yang dari collector, dan ada yang dari emiitter. Dan pada penerapannya umumnya pakai yang collector)
+
 ---
 ## Layout Breadboard
 ---
+
+NAMA | RANGKAIAN
+-----|---
+NOT | ![NOT](./assets/NOT-breadboard.png)
+AND |![AND](./assets/AND-breadboard.png)
+NAND |![NAND](./assets/NAND-breadboard.png)
+OR |![OR](./assets/OR-breadboard.png)
+NOR |
+XOR |
+XNOR |
+
 ## Resulting Test
 ---
 ## Notes
