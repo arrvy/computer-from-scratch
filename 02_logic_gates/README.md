@@ -169,22 +169,22 @@ Untuk percobaan membuat logic gates, pastinya kita akan membuat dalam bentuk dis
 
 Disini, aku bakalan pakai aplikasi simulasi Falstad. Meskipun kurang nyata, simulasi ini sangatlah cukup bagi kebutuhanku dalam menjelaskan secara sederhana rangkaian dan hasil dari logic gates dasar.
 
-NAMA | RANGKAIAN
------|---
-NOT |![INVERTER](./assets/image.png)
-AND |![AND](./assets/image-1.png)
-AND-new |![AND-new](./assets/AND-new.png)
-NAND |![NAND](./assets/image-2.png)
-OR |![OR](./assets/image-3.png)
-OR New |![OR-new](./assets/OR-new.png)
-NOR |![NOR](./assets/image-4.png)
-XOR |
-XNOR |
+NAMA | RANGKAIAN | Notes
+-----|--- | ---
+NOT |![INVERTER](./assets/image.png) |
+AND |![AND](./assets/image-1.png) |
+AND-new |![AND-new](./assets/AND-new.png) |
+NAND |![NAND](./assets/image-2.png) |
+OR |![OR](./assets/image-3.png) |
+OR New |![OR-new](./assets/OR-new.png) |
+NOR |![NOR](./assets/image-4.png) |
+XOR |![XOR](./assets/XOR.png) | 
+XNOR |![XNOR](./assets/XNOR.png) |
 > Aku membuat beberapa desain dalam satu logic gates, dengan perbedaan lokasi output yang digunakan (ada yang dari collector, dan ada yang dari emiitter. Dan pada penerapannya umumnya pakai yang collector)
+> Terdapat beberapa kekurangan yang dihasilkan dari logic gates kombinasi transistor (TTL). More on that later.
 
 ---
 ## Layout Breadboard
----
 
 NAMA | RANGKAIAN
 -----|---
@@ -196,6 +196,7 @@ NOR |
 XOR |
 XNOR |
 
+---
 ## Resulting Test
 ---
 ## Notes
