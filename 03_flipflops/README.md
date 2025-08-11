@@ -123,8 +123,8 @@ SR NOR Latch   |![SR NOR Latch](./diagram/SR-NOR-Latch.png)||
 SR NAND Latch  |![](./diagram/sr-nand-latch.png)||
 D Latch        |![D Latch](./diagram/d-latch.png)|Not quite useful, just like an "wire"|
 D Latch Enabled|![D Latch Enabled](./diagram/d-latch-enabled.png)||
-SR with Enable |||
-Clock Generator|||
+SR with Enable |![SR Latch Enabled](./diagram/sr-latch-enabled.png)||
+Clock Generator||Approximately 15.5Hz oscillator, adjust frequency by changing capacitor/resistance|
 SR|||
 JK|||
 T|||
